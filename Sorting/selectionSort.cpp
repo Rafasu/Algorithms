@@ -3,7 +3,7 @@
 using namespace std ;
 
 void selectionSort(int iArr[], int n){
-	int temp, iMin, iPos ;
+	int temp, iMin ;
 	for(int i = 0 ; i < n - 1 ; i++){
 		iMin = i ;
 		for(int j = i + 1 ; j < n ; j++){
