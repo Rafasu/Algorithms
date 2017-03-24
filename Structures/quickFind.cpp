@@ -2,6 +2,8 @@
 
 //Costs Initialization 	Find 	Union
 //		N	1	N
+//Problem: Takes n"2 array accesses to process N sequence of union commands.
+
 
 #include <iostream>
 #include <vector>
