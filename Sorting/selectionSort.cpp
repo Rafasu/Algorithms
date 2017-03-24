@@ -16,6 +16,7 @@ void selectionSort(int iArr[], int n){
 
 		//Swap
 		if(i != iMin ) {
+			cout << iArr[iMin] << endl ;
 			temp = iArr[i] ;
 			iArr[i] = iArr[iMin] ;
 			iArr[iMin] = temp ;
@@ -30,8 +31,6 @@ void print(int iArr[], int n) {
 	}
 	cout << endl ;
 }
-
-
 
 int main(){
 	int prueba[5] = {0, 8 , 6, 9,-1} ;
