@@ -22,9 +22,8 @@ void bubbleSort(int iArr[], int n){
 			}
 		}
 	}
-
-
 }
+
 
 void print(int iArr[], int n){
 	for(int i = 0 ; i < n ; i ++){
