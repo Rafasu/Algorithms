@@ -79,7 +79,7 @@ int main(){
 	print(5) ; 
 
 	prim(5) ;
-	print(5) ;
+
 
 
 	int i ;
