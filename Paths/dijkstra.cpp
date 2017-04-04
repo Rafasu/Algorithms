@@ -17,11 +17,11 @@ int iMat[5][5] = {   {0, 2, 9999, 10, 9999},
 
 int L[5] ; //Caminos directos a partir del nodo de inicio.
 int T[5] ; // Nodos
-arco S[5] ; //Solucion.
+arco S[4] ; //Solucion.
 
 void dijkstra(int n){
 	int iInicio, i, j, k ;
-	int iMin = 9999, iVmin = 0 ;
+	int iMin,  iVmin;
 	cout << "Nodo Inicio : " << endl ;
 	cin >> iInicio ;
 
@@ -37,6 +37,10 @@ void dijkstra(int n){
 	//Repite n - 1 veces.
 	for(i = 1 ; i < n ; i++){
 
+		//Inicializa el minimo con infinito.
+		iMin = 9999 ;
+
+		//Escoge el camino minimo del conjunto.
 		for(j = 0 ; j < n ;  j++){
 			if( 0 <= L[j] && L[j] <= iMin){
 				iMin = L[j] ;
@@ -60,9 +64,38 @@ void dijkstra(int n){
 	}
 }
 
-
+void print(int n){
+	int i, j ; 
+	for(i = 0 ; i < n ; i++){
+		for(j = 0 ; j < n ; j++){
+			cout << iMat[i][j] << "\t"; 
+		}
+		cout << endl ;
+	}
+	cout << endl ;
+}
 
 int main(){
+	print(5) ; 
+
+	dijkstra(5) ;
+	print(5) ;
+
+
+	int i ;
+
+	//Imprime los caminos mas cortos en base a Dijkstra.
+	for(i = 0 ; i < 5; i++){
+		cout << S[i].iSrc + 1<< "\t" ;
+	}
+	cout << endl ;
+	i = 0 ;
+	while( i < 4){
+	//	cout << S[i].iSrc << endl ;
+		cout << S[i].iDst + 1<< "\t" ;
+		i++ ;
+	}
+	cout << endl ;
 
 	return 0 ;
 }
