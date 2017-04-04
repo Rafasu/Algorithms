@@ -52,7 +52,8 @@ void dijkstra(int n){
 		S[i - 1].iSrc = T[iVmin] ;
 		S[i - 1].iDst = iVmin ;
 
-		//Checa si el camino es mas corto. 
+		//Checa en los demas nodos caminos mas cortos
+		//(Acumulado)
 		for(k = 0 ; k < n ; k++){
 			if(L[iVmin] + iMat[iVmin][k] < L[k]){
 				L[k]  = L[iVmin] + iMat[iVmin][k] ;
