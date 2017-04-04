@@ -36,7 +36,7 @@ void prim(int n){
 		iMin = 9999 ;
 
 		//Busca el arco mas corto entre los nodos del conjunto.
-		for(j = 0; j < n ; j++){
+		for(j = 1; j < n ; j++){
 			if(0 <=  L[j] && L[j] <=  iMin){
 				iMin = L[j] ;
 				iVmin = j ;
@@ -44,13 +44,13 @@ void prim(int n){
 		}
 
 		//Agregar arco a la solucion.
-		S[i].iSrc = T[iVmin] ;
-		S[i].iDst = iVmin ;
+		S[i-1].iSrc = T[iVmin] ;
+		S[i-1].iDst = iVmin ;
 
 		//Checa si existe un arco menor hacia los demas nodos en base
 		// Al conjunto de nodos que falta enlazar.
 		//A diferencia de dijkstra no toma en cuenta el acumulado.
-		for(k = 0 ; k < n ; k++){
+		for(k = 1 ; k < n ; k++){
 			if(iMat[iVmin][k] < L[k]) {
 				L[k] = iMat[iVmin][k] ;
 				T[k] = iVmin ;
