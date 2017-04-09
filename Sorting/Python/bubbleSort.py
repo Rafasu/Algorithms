@@ -22,7 +22,7 @@ def bubbleSort(array):
 def printA(array):
 	n = len(array)
 	for  i in range(n):
-		print( array[i])
+		print("%d" %array[i]),
 	print ("\n")
 	return 
 
