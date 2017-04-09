@@ -1,3 +1,3 @@
 ## Sorting Algorithms.
 
-This repository is full of different types and different ways for sorting arrays.
+This repository is full of different ways for sorting arrays.
