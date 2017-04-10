@@ -16,7 +16,7 @@ def bubbleSort(array):
 		i += 1
 		change = False
 
-		for  j in range(0, n - i -1):
+		for  j in range(0, n - i):
 			if(array[j] > array[j+1]):
 				swap(array, j, j+1)
 				change =  True
@@ -33,7 +33,7 @@ def printA(array):
 
 
 #Main
-testArray = [1, -2, 0, 8, 9]
+testArray = [1, -2, 0, 8, 9, 2]
 
 printA(testArray)
 bubbleSort(testArray)
