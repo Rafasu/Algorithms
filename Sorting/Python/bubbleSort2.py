@@ -32,11 +32,9 @@ def printA(array):
 	return 
 
 
-#Global Variables.
+#Main
 testArray = [1, -2, 0, 8, 9]
 
-
-#Main
 printA(testArray)
 bubbleSort(testArray)
 printA(testArray)

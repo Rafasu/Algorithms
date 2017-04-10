@@ -26,12 +26,13 @@ def printA(array):
 	print ("\n")
 	return 
 
-#Global variables
-testArray = [1, 5, -1, 8, 2]
 
-###################Main
+###Main
 
 #Array before sorting.
+testArray = [1, 5, -1, 8, 2]
+
+
 printA(testArray)
 
 bubbleSort(testArray)
