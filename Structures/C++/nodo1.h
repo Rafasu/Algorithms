@@ -1,3 +1,7 @@
+#ifndef NODO1_H_INCLUDED
+#define NODO1_H_INCLUDED
+
+
 #include <iostream>
 
 using namespace std ;
@@ -8,7 +12,6 @@ class Nodo{
 		Nodo *pSiguiente ;
 		Nodo() ;
 		Nodo(int dato) ;
-		Nodo(int dato, Nodo *pS) ;
 };
 
 
@@ -22,7 +25,5 @@ Nodo::Nodo(int dato){
 	pSiguiente = NULL ;
 }
 
-Nodo::Nodo(int dato, Nodo *pS){
-	this->dato = dato ;
-	pSiguiente = pS ;
-}
+
+#endif
