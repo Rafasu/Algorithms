@@ -12,7 +12,7 @@ int iMat[5][5] = {   {0, 2, 9999, 10, 9999},
 		     {9999, 0 , 9, 9999, 5},
 		     {12, 9999, 0, 6, 9999},
 		     {9999, 9999,9999, 0, 7},
-		     {9999, 9999, 9999, 3, 0}
+		     {9999, 9999, 3,9999, 0}
 		} ;
 
 int L[5] ; //Caminos directos a partir del nodo de inicio.
@@ -86,13 +86,12 @@ int main(){
 	int i ;
 
 	//Imprime los caminos mas cortos en base a Dijkstra.
-	for(i = 0 ; i < 5; i++){
+	for(i = 0 ; i < 4; i++){
 		cout << S[i].iSrc + 1<< "\t" ;
 	}
 	cout << endl ;
 	i = 0 ;
 	while( i < 4){
-	//	cout << S[i].iSrc << endl ;
 		cout << S[i].iDst + 1<< "\t" ;
 		i++ ;
 	}
