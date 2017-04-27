@@ -25,10 +25,10 @@ char *reverse(char *str, int n){
 
 
 int main(){
-	char prueba[5] = "hola" ;
-	cout << prueba << endl ;
-	reverse( prueba , 4 ) ;
-	cout << prueba << endl ;
+	char test[5] = "hola" ;
+	cout << test << endl ;
+	reverse( test, 4 ) ;
+	cout << test << endl ;
 
 	return 0 ;
 }
