@@ -1,10 +1,10 @@
 # Algorithms 
+This repository contains data structures and algorithms that are of my interest.
 
 ## Algorithms in C++
-## Algorithms in Python.
 
-This repository contains the basic algortihms that are of my interest.
-There are written in Python and C++.
+
+## Algorithms in Python.
 
 
 
