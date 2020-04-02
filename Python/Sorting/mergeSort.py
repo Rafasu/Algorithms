@@ -1,3 +1,4 @@
+#Best resouce to understand merge sort: https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/
 #In Case that recursion depth is not enough uncomment lines below
 # import sys
 # sys.setrecursionlimit(1500)
